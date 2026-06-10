@@ -11,7 +11,7 @@ authors = "iMeeTake"
 description = '''
 Library for Take's Mods
 '''
-#logoFile = ""
+logoFile = "assets/tlib/icon.png"
 
 [[dependencies.tlib]]
 modId = "forge"

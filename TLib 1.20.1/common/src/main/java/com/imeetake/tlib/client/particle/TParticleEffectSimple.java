@@ -29,7 +29,6 @@ public class TParticleEffectSimple implements ParticleOptions {
         return BuiltInRegistries.PARTICLE_TYPE.getKey(this.type).toString();
     }
 
-    // Обязательное поле для ParticleOptions в 1.20.1
     public static final ParticleOptions.Deserializer<TParticleEffectSimple> DESERIALIZER = new ParticleOptions.Deserializer<>() {
         @Override
         public TParticleEffectSimple fromCommand(ParticleType<TParticleEffectSimple> type, StringReader reader) throws CommandSyntaxException {

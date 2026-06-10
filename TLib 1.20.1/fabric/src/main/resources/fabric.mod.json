@@ -40,8 +40,5 @@
                 "modmenu.modrinth": "https://modrinth.com/mod/tlib"
             }
         }
-    },
-    "suggests": {
-        "another-mod": "*"
     }
 }

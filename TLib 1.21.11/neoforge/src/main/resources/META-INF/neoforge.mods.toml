@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[10,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "tlib"
+version = "${version}"
+displayName = "TLib"
+authors = "iMeeTake"
+description = '''
+Library for Take's Mods
+'''
+logoFile = "assets/tlib/icon.png"
+
+[[dependencies.tlib]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.10,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tlib]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.11]"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tlib]]
+modId = "architectury"
+type = "required"
+versionRange = "[19.0.1,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "tlib.mixins.json"

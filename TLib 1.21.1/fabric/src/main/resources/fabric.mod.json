@@ -1,0 +1,44 @@
+{
+    "schemaVersion": 1,
+    "id": "tlib",
+    "version": "${version}",
+    "name": "TLib",
+    "description": "Library for Take's Mods",
+    "authors": [
+        "iMeeTake"
+    ],
+    "contact": {
+        "homepage": "https://www.curseforge.com/minecraft/mc-mods/tlib",
+        "sources": "https://github.com/iMeeTake/TLib",
+        "issues": "https://github.com/iMeeTake/TLib/issues"
+    },
+    "license": "MIT",
+    "icon": "assets/tlib/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.imeetake.tlib.fabric.TLibFabric"
+        ],
+        "client": [
+            "com.imeetake.tlib.fabric.client.TLibFabricClient"
+        ]
+    },
+    "mixins": [
+        "tlib.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.18.2",
+        "minecraft": "1.21.1",
+        "java": ">=21",
+        "architectury": ">=13.0.8",
+        "fabric-api": "*"
+    },
+    "custom": {
+        "modmenu": {
+            "links": {
+                "modmenu.wiki": "https://github.com/iMeeTake/TLib/wiki",
+                "modmenu.modrinth": "https://modrinth.com/mod/tlib"
+            }
+        }
+    }
+}

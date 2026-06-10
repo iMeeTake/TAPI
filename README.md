@@ -1,6 +1,6 @@
 # Welcome to TLib
 
-**TLib** (Take's Lib) is a utility-focused library for **Minecraft Fabric mods (1.21+)**.
+**TLib** (Take's Lib) is a utility-focused library for **Minecraft Fabric, Forge, and NeoForge mods**.
 
 It provides powerful tools to make your mod cleaner, simpler, and more maintainable.  
 Whether you're dealing with particles, sound, rendering, or other systems — TLib has you covered.
@@ -35,7 +35,15 @@ repositories {
 }
 
 dependencies {
-    modImplementation("com.imeetake:tlib:version") // version = 1.0.0-1.21.1, 1.2.3-1.21.5 etc.
+    // Fabric 1.21.x
+    modImplementation("com.imeetake.tlib:tlib-fabric:1.5.0-1.21.11")
+
+    // NeoForge 1.21.x
+    modImplementation("com.imeetake.tlib:tlib-neoforge:1.5.0-1.21.11")
+
+    // Fabric/Forge 1.20.1
+    modImplementation("com.imeetake:tlib-fabric:1.5.0-1.20.1")
+    modImplementation("com.imeetake:tlib-forge:1.5.0-1.20.1")
 }
 ```
 
